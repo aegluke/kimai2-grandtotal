@@ -143,7 +143,7 @@ function kimaiGetTimesheets(url, token)
     do {
         var pagedTimesUrl = timesUrl + '&page=' + page;
         var aItems = kimaiGetApiJson(pagedTimesUrl, token);
-        if (aItems!==undefined && aItems!==null && aItems.length>0) {
+        if (aItems !== undefined && aItems !== null && aItems.length > 0) {
             for (var aEntry of aItems)
             {
                 var minutes = Math.round(aEntry['duration'] / 60);

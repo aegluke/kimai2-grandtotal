@@ -133,7 +133,7 @@ function kimaiGetTimesheets(url, token)
     var result = [];
 
     // TODO loop over pages instead of 9999 hardcoded entries?
-    var timesUrl = url + '/timesheets?active=0&size=9999';
+    var timesUrl = url + '/timesheets?active=0&size=500';
     if (loadAllUsers !== null && loadAllUsers !== undefined && loadAllUsers === true) {
         timesUrl = timesUrl + '&user=all';
     }

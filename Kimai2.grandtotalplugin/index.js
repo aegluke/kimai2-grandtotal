@@ -203,7 +203,7 @@ function kimaiGetTimesheets(url, token)
             }
         }
         page = page + 1;
-    } while (aItems!==undefined && aItems!==null && aItems.length > 0);
+    } while (aItems !== undefined && aItems !== null && aItems.length > 0);
 
     return JSON.stringify(result);
 }

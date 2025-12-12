@@ -140,6 +140,9 @@ function kimaiGetTimesheets(url, token)
     if (loadExported !== null && loadExported !== undefined && loadExported !== true) {
         timesUrl = timesUrl + '&exported=0';
     }
+    
+    var page = 1;
+    
     do {
         var pagedTimesUrl = timesUrl + '&page=' + page;
         var aItems = kimaiGetApiJson(pagedTimesUrl, token);
